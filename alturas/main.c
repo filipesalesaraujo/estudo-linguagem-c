@@ -48,7 +48,7 @@ int main()
 
     media = soma / N;
 
-    printf("Altura media: %.2lf\n", media);
+    printf("\nAltura media: %.2lf\n", media);
 
     nMenores = 0;
 
@@ -63,6 +63,14 @@ int main()
     percentualMenores = (double)nMenores * 100 / N;
 
     printf("Pessoas com menos de 16 anos: %.1lf %%\n", percentualMenores);
+
+    for (int i = 0; i < N; i++)
+    {
+        if(idades[i] < 16)
+        {
+            printf("%s\n", nomes[i]);
+        }
+    }
 
     return 0;
 }
